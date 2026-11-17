@@ -1,14 +1,7 @@
-name = "Shrushti"
-age = 22
-percentage = 85.5
-is_student = True
+a = 10
+b = 5
 
-print("Name:", name)
-print("Age:", age)
-print("Percentage:", percentage)
-print("Student:", is_student)
-
-print(type(name))
-print(type(age))
-print(type(percentage))
-print(type(is_student))
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
