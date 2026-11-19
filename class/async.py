@@ -1,0 +1,18 @@
+import asyncio
+async def main():
+    take=asyncio.create_task(fn2())
+    print("one")
+    await asyncio.sleep(1)
+    await fn2()
+    print("four")
+    await asyncio.sleep(3)
+    print("five")
+    await asyncio.sleep(1)
+
+async def fn2():
+    await asyncio.sleep(1)
+    print("two")
+    await asyncio.sleep(4)
+    print("three")
+    
+asyncio.run(main())
